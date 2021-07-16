@@ -1,5 +1,9 @@
 import random
-ans = random.randint(1, 100)
+x = input('最小值: ')
+y = input('最大值: ')
+x = int(x)
+y = int(y)
+ans = random.randint(x, y)
 count = 0
 while True:
 	count = count + 1
@@ -10,8 +14,8 @@ while True:
 		print('你在第',count,'次猜中了')
 		break
 	elif guess > ans:
-		print('比答案大')
+		print('小一點')
 	elif guess < ans:
-		print('比答案小')
+		print('大一點')
 	
 	print('你猜了', count, '次')
